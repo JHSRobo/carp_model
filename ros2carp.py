@@ -16,6 +16,16 @@ class CarpVideo(Node):
         self.color = (255, 0, 0)
         self.thickness = 2
 
+        #Associate region number with image
+        self.images = {
+            "0": r'C:\Users\jonah\Downloads\Region 0.jpg',
+            "1": r'C:\Users\jonah\Downloads\Region 1.jpg',
+            "2": r'C:\Users\jonah\Downloads\Region 2.jpg',
+            "3": r'C:\Users\jonah\Downloads\Region 3.jpg',
+            "4": r'C:\Users\jonah\Downloads\Region 4.jpg',
+            "5": r'C:\Users\jonah\Downloads\Region 5.jpg'
+        }
+
       def show_images(self):
         #Go through CSV file and show images
         with open("carp.csv") as file:
